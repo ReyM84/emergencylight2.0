@@ -1,0 +1,139 @@
+.slick-track {
+  position: relative !important;
+  z-index: 100 !important;
+  left: 2em !important;
+}
+#body > div.header-container.sticky-header > div.top-menu > div {
+  height: 2rem;
+}
+
+#body
+  > div.header-container.sticky-header
+  > div.top-menu
+  > div
+  > div.right.account-links
+  > ul
+  > li.navUser-item.navUser-item--cart
+  > a
+  > span.navUser-item-cartLabel
+  > i {
+  height: 2.2rem;
+  background: $primaryRed;
+}
+
+//(320px - 424px)
+@include media(">phone", "<tablet") {
+  #body
+    > div.header-container.sticky-header
+    > div.header-container.full-width.full-width.in-container
+    > div
+    > div
+    > header
+    > div.header-logo.header-logo--left,
+  .header-padding {
+    background: white !important;
+  }
+
+  // Mobile Navigation Menu
+  .navPages {
+    background: $primaryRed !important;
+    width: 70%;
+  }
+}
+#menu {
+  background: $primaryRed !important;
+}
+.mobileNavMenu {
+  background: $primaryRed !important;
+  position: relative;
+  width: 60% !important;
+  #desktop-menu > h2,
+  #mobile-menu > div.category-menu > h2,
+  #mobile-menu > div.brand-menu > h2 {
+    background: rgb(235, 233, 233);
+    color: $primaryRed !important;
+    width: 15.269rem;
+  }
+
+  .searchMobileMenu {
+    width: 12rem !important;
+  }
+}
+
+@include media(">=lgphone", "<tablet") {
+  //Header
+
+  //Mobile Nav Menu
+  .navPages {
+    background: $primaryRed !important;
+    width: 60% !important;
+  }
+  #desktop-menu > h2,
+  #mobile-menu > div.category-menu > h2,
+  #mobile-menu > div.brand-menu > h2 {
+    width: 17.269rem;
+  }
+}
+
+@include media(">=tablet", "<=800") {
+  .navPages {
+    background: $primaryRed !important;
+    width: 30.5% !important;
+    border-top: 1rem solid $primaryRed;
+    margin-top: 1em;
+  }
+
+  .mobileNavMenu {
+    width: 200px !important;
+  }
+
+  #menu > nav > div,
+  #menu {
+    background: transparent !important;
+  }
+}
+
+@include media(">=navfix") {
+  #menu {
+    background: transparent !important;
+    border: none;
+  }
+
+  #body
+    > div.header-container.sticky-header
+    > div.main-nav-container.in-container {
+    background: $primaryRed;
+    border-bottom: 3px solid #8b8b8b;
+    width: 9;
+  }
+}
+
+@include media(">=navfix", "<926px") {
+  #desktop-menu {
+    li > a {
+      font-size: 11.5px !important;
+    }
+  }
+}
+
+@include media(">925px") {
+  #desktop-menu {
+    li > a {
+      font-size: 15px !important;
+    }
+  }
+}
+
+@include media(">=1200px") {
+  #body .navlfix {
+    position: absolute;
+    background-color: $primaryRed !important;
+    height: 2.7rem;
+    width: 10rem;
+    top: 12rem;
+    z-index: 0;
+  }
+}
+
+
+

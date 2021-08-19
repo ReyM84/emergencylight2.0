@@ -1,0 +1,82 @@
+@import "./mquery.scss";
+@import "./settings/global/z-index/z-index";
+
+// Remove logo banner
+#body
+  > div.header-container.sticky-header
+  > div.header-container.full-width.full-width.in-container
+  > div
+  > div
+  > header
+  > div.header-logo.header-logo--left
+  > a
+  > div
+  > img {
+  display: none;
+}
+#body
+  > div.header-container.sticky-header
+  > div.header-container.full-width.full-width.in-container
+  > div
+  > div
+  > header {
+  background: white !important;
+}
+
+// Home Page
+.custom-pages-nav,
+#side-categories > div.categories > h2,
+#carousel-active > h2,
+#side-categories > div.brands-option.with-brands > div > h2,
+#body > div.header-container.sticky-header > div.top-menu > div,
+#body > div.header-container.sticky-header > div.top-menu {
+  background: $primaryRed;
+}
+
+.custom-pages-nav {
+  position: relative !important;
+  width: 101.255%;
+  margin-left: -2em !important;
+  padding-left: 5px;
+}
+
+@include media(">=navfix") {
+  #body
+    > div.header-container.sticky-header
+    > div.header-container.full-width.full-width.in-container
+    > div
+    > div
+    > header
+    > div.header-logo.header-logo--left {
+    display: none;
+  }
+}
+
+//(320px - 768px)
+@include media(">phone", "<tablet") {
+  #body
+    > div.header-container.sticky-header
+    > div.header-container.full-width.full-width.in-container
+    > div
+    > div
+    > header
+    > div.header-logo.header-logo--left,
+  .header-padding {
+    background: white !important;
+  }
+}
+
+@include media(">=tablet") {
+  #body
+    > div.header-container.sticky-header
+    > div.header-container.full-width.full-width.in-container
+    > div
+    > div
+    > header
+    > div.header-logo.header-logo--left,
+  .header-padding {
+    background: white !important;
+  }
+}
+
+

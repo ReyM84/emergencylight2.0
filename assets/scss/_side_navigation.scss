@@ -1,0 +1,40 @@
+//Responsive Carousel, Clients, and Call Now
+
+#search_query {
+  width: 152px ;
+  position: relative;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 0.9rem !important;
+  height: 32px;
+  background-image: url('https://img.icons8.com/ios-filled/20/000000/search--v1.png');
+  background-repeat: no-repeat;
+  background-position: 90% center;
+}
+
+@include media("<1261px") {
+  #search_query {
+    position: relative;
+    right: 1.5rem;
+  }
+}
+
+#side-categories {
+  width: 164px !important;
+}
+
+.callNow {
+  min-width: 152px;
+  position: relative;
+  top: -6rem;
+}
+
+.categories {
+  width: 152px !important;
+  position: relative;
+  top: -5.6rem;
+}
+
+#side-categories > div.container > form > fieldset > div > input.button.button--primary.form-prefixPostfix-button--postfix {
+  background: transparent;
+  border: none;
+}

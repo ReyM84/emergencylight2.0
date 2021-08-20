@@ -1,0 +1,18 @@
+.top-menu {
+    background:   #b1130c;
+  }
+
+body > div.header-container.full-width.full-width.in-container > div > div > header, body > div.header-container.full-width.full-width.in-container > div > div > header > div.header-logo.header-logo--left {
+    background: white !important;
+  }
+  
+  body > div.header-container.full-width.full-width.in-container > div > div > header {
+    position: relative;
+    top: -0.6rem
+  }
+  .checkhead {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    position: relative;
+  }

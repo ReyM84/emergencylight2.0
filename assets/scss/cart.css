@@ -2,6 +2,10 @@
     border-radius: 2rem;
   }
 
+tr.cart-item {
+  border: none;
+} 
+
 @media screen and (max-width: 424px) {
     .bg {
         top: 4.5rem;
@@ -21,6 +25,20 @@
         position: relative !important;
         left: 8rem !important;
       }
+
+      table.cart {
+        width: 118%;
+      }
+}
+
+@media screen and (min-width: 641px) {
+  .table.cart {
+    width: 50%;
+  }
+
+  table.cart {
+    width: unset !important;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -34,4 +52,68 @@
         position: relative;
         top: 3rem;
       }
+}
+
+@media screen and (min-width: 801px) {
+  .mobileNumber {
+    position: relative !important;
+    top: 1rem !important;
+  }
+  
+  .mobileLogo {
+    margin-top: 1rem;
+  }
+
+  .cart-item {
+    position: relative !important;
+    left: unset !important;
+  }
+
+  table.cart {
+    padding: 1rem;
+  }
+
+  #body > div.body.content > div.container.main > div > main > div:nth-child(5) {
+    padding: 0.5rem !important;
+   
+  }
+  
+  .cart-item-title, .cart-item-image, th.cart-header-item  {
+    position: relative;
+    left: 1rem;
+    padding: 1rem;
+  }
+  
+  #body > div.body.content > div.container.main > div > main > div:nth-child(5) > table > thead > tr > th:nth-child(4) {
+    position: relative;
+    right: 1rem;
+  }
+  
+  td.cart-item-block.cart-item-info {
+    position: relative;
+    right: 1rem;
+  }
+  
+  .cart-header {
+    position: relative !important;
+    right: 1rem !important;
+  }
+
+  .mobileLogo {
+    top: -0.5rem !important;
+  }
+}
+
+@media screen and (min-width: 1368px) {
+	.bg {
+		justify-content: space-around;
+	}
+}
+@media screen and (min-width: 1900px) {
+	.mobileLogo {
+		left: 10rem
+	}
+	.mobileNumber {
+		right: 10rem;
+	}
 }

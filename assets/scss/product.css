@@ -114,4 +114,7 @@ div.main {
     #body > footer {
         width: 110% !important;
     }
+    #product-images-container > div.main-image-container > div.productImageSlider.slider-for.slick-initialized.slick-slider.ready > div > div > div > div > li > figure > img {
+        top: -7rem;
+    }
 }

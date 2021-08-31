@@ -17,104 +17,81 @@ td {
 	padding: 5px;
 }
 
+#body>div.body.content {
+	top: -3rem;
+}
+
 .mobileLogo, .mobileNumber {
-	max-width: 370px;
-}
-
-.bg {
-	top: 4rem;
-	display: flex !important;
-	position: relative;
-	left: 5vw;
-}
-
-div.main {
-	width: 90vw !important;
-}
-
-#product-images-container>div.main-image-container>div.productImageSlider.slider-for.slick-initialized.slick-slider.ready>div>div {
-	display: flex;
-	justify-content: center !important;
-	align-items: center !important;
-}
-
-#product-images-container>div.main-image-container>div.productImageSlider.slider-for.slick-initialized.slick-slider.ready>div>div>div>div>li>figure>img {
-	max-width: 15rem;
-}
-
-#olark-wrapper>div.olark-launch-button-wrapper, #topcontrol>svg {
-	display: none;
-}
-
-#body>footer {
-	width: 100vw;
+	max-width: 370px !important;
 }
 
 @media screen and (max-width: 320px) {
-	#body>div.body.content>div {
-		position: relative;
-		top: -3rem;
+	.mobileLogo, .mobileNumber {
+		width: 90% !important;
 	}
-	#product-images-container>div.main-image-container>div.productImageSlider.slider-for.slick-initialized.slick-slider.ready>div>div>div>div>li>figure>img {
+	.bg {
 		position: relative;
-		right: 1.9rem;
+		padding: 3rem !important;
+		left: 5%;
 	}
 }
 
 @media screen and (min-width: 321px) {
-	#body>footer>div.container {
-		position: relative;
-		top: 17rem;
+	.mobileLogo, .mobileNumber {
+		width: 80%;
 	}
-	#product-images-container>div.main-image-container>div.productImageSlider.slider-for.slick-initialized.slick-slider.ready>div>div>div>div>li>figure>img {
-		position: relative;
-		right: 2.6rem;
+	.bg {
+		padding: 2rem !important;
+		top: -2rem;
+		left: 6.75%;
 	}
-	div.card-text.add-to-cart-button {
-		padding: 3px;
-		width: 10.5rem !important;
-	}
-}
-
-#product-images-container>div.main-image-container>div.productImageSlider.slider-for.slick-initialized.slick-slider.ready>div>div>div>div>li>figure>img, #product-images-container>div.main-image-container>div.productImageSlider.slider-for.slick-initialized.slick-slider.ready>div>div {
-	all: unset;
 }
 
 @media screen and (min-width: 425px) {
-	div.card-text.add-to-cart-button {
-		width: 14.5rem !important;
+	.bg {
+		top: -2rem;
+		left: unset;
 	}
-	#product-images-container>div.main-image-container>div.productImageSlider.slider-for.slick-initialized.slick-slider.ready>div>div>div>div>li>figure>img, #product-images-container>div.main-image-container>div.productImageSlider.slider-for.slick-initialized.slick-slider.ready>div>div>div {
-		max-width: 20rem !important;
-	}
-	#body>footer>div.container {
-		all: unset;
-	}
-}
-
-@media screen and (min-width: 481px) {
-	#product-images-container>div.main-image-container>div.productImageSlider.slider-for.slick-initialized.slick-slider.ready>div>div>div>div>li>figure>img, #product-images-container>div.main-image-container>div.productImageSlider.slider-for.slick-initialized.slick-slider.ready>div>div>div {
-		position: relative;
-		max-height: 400px;
+	.mobileLogo, .mobileNumber {
+		width: unset;
+		max-width: 370px;
 	}
 }
 
-@media screen and (min-width: 551px) {
-	#body>footer>div.container>section>div.footer-payment-icons {
-		width: 80vw;
+@media screen and (min-width: 768px) {
+	.bg {
+		flex-direction: row;
 	}
-	#body>footer>div.container>section {
+	.mobileLogo {
 		position: relative;
-		left: 12.5vw;
+		top: 4rem;
 	}
-	#product-images-container>div.main-image-container>div.productImageSlider.slider-for.slick-initialized.slick-slider.ready>div>div>div>div>li>figure {
-		left: 33%;
+	#body>div.body.content {
+		top: 1rem;
+	}
+}
+
+@media screen and (min-width: 801px) {
+	.mobileNumber {
 		position: relative;
+		top: 4.5rem;
 	}
-    #body > footer {
-        width: 110% !important;
-    }
-    #product-images-container > div.main-image-container > div.productImageSlider.slider-for.slick-initialized.slick-slider.ready > div > div > div > div > li > figure > img {
-        top: -7rem;
-    }
+	.bg {
+		top: -2rem;
+	}
+}
+
+@media screen and (min-width: 1368px) {
+	.bg {
+		justify-content: space-around;
+	}
+}
+
+@media screen and (min-width: 1900px) {
+	.mobileLogo {
+		left: 10rem
+	}
+	.mobileNumber {
+		right: 10rem;
+	}
 }

@@ -4,11 +4,11 @@ $commonLight: #cac9c9;
 $bottomBorder: #808080;
 $redBorder: "1px solid red";
 
-@import "./home";
+@import "./homePage";
 @import "./cards";
 @import "./navigation";
-@import "./product_page";
-@import "./category_page";
+@import "./productPage";
+@import "./categoryPage";
 @import "./cart";
 @import "./side_navigation";
 @import "./carousel";
@@ -25,4 +25,8 @@ $redBorder: "1px solid red";
   > header,
 #body {
   background: white;
+}
+
+.bg {
+  visibility: hidden;
 }

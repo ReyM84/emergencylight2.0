@@ -1,0 +1,54 @@
+.catBg {
+    position: absolute;
+    top: -12rem;
+    padding: 1rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .catLogo {
+    max-width: 350px;
+  }
+
+  .catNumber { 
+    max-width: 300px;
+  }
+
+@include media("<345px") {
+    .catLogo {
+        max-width: 300px;
+    }
+}  
+
+@include media(">399px") {
+    .catBg {
+        top: -14rem;
+    }
+}
+
+@include media(">800px") {
+    .catBg {
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 1150px;
+    }
+      
+      .catLogo {
+        max-width: 400px;
+      }
+}
+
+@include media(">1439px") {
+    .catBg {
+        justify-content: space-between;
+      }
+    .catLogo {
+        max-width: 450px;
+    }
+    .catNumber {
+        max-width: 350px;
+    }
+}

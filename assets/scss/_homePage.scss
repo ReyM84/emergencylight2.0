@@ -79,5 +79,12 @@
   }
 }
 
+@include media("<321px") {
+  .pdfButton {
+    position: relative !important;
+    width: 144px !important;
+    left: -0.5rem !important;
+  }
+}
 
-// Home Header
+

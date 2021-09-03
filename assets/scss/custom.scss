@@ -4,6 +4,7 @@ $commonLight: #cac9c9;
 $bottomBorder: #808080;
 $redBorder: "1px solid red";
 
+// Import SCSS files
 @import "./homePage";
 @import "./cards";
 @import "./navigation";
@@ -13,8 +14,10 @@ $redBorder: "1px solid red";
 @import "./side_navigation";
 @import "./carousel";
 @import "./header";
+@import "./homeHeader";
+@import "./categoryHeader";
 
-
+//Global CSS
 #body > div.body.content > div.container.main,
 #body > div.header-container.sticky-header,
 #body

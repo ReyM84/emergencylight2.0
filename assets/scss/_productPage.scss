@@ -28,6 +28,10 @@
   background: white !important;
 }
 
+.container-header, #recommended-products-below > div.productView.thumbnail-unclicked.qty-box-visible > article > ul > li.tab.warranty > a {
+  background: $primaryRed !important;
+}
+
 #product-page-no-sidenav
   > div.productView.thumbnail-unclicked.qty-box-visible
   > article

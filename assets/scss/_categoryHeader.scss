@@ -23,32 +23,16 @@
     }
 }  
 
-@include media(">399px") {
-    .catBg {
-        top: -14rem;
-    }
-}
-
 @include media(">800px") {
     .catBg {
         flex-direction: row;
-        justify-content: space-around;
+        top: -14rem;
+        width: 100vw !important;
+        left: -12.5rem;
+        justify-content: space-between;
         max-width: 1150px;
     }
-      
-      .catLogo {
-        max-width: 400px;
-      }
-}
-
-@include media(">1439px") {
-    .catBg {
-        justify-content: space-between;
-      }
     .catLogo {
-        max-width: 450px;
-    }
-    .catNumber {
-        max-width: 350px;
+        max-width: 400px;
     }
 }

@@ -1,6 +1,11 @@
 @import "./mquery.scss";
 @import "./settings/global/z-index/z-index";
 
+
+.footer-info {
+  top: 3rem !important;
+}
+
 // Remove logo banner
 #body
   > div.header-container.sticky-header

@@ -1,0 +1,39 @@
+
+.conBg {
+    position: absolute;
+    top: -12rem;
+    padding: 1rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .conLogo {
+    max-width: 350px;
+  }
+
+  .conNumber { 
+    max-width: 300px;
+  }
+
+@include media("<345px") {
+    .conLogo {
+        max-width: 300px;
+    }
+}  
+
+@include media(">800px") {
+    .conBg {
+        flex-direction: row;
+        top: -14rem;
+        width: 100vw !important;
+        left: -12.5rem;
+        justify-content: space-between;
+        max-width: 1150px;
+    }
+    .conLogo {
+        max-width: 400px;
+    }
+}

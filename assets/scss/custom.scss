@@ -16,6 +16,8 @@ $redBorder: "1px solid red";
 @import "./header";
 @import "./homeHeader";
 @import "./categoryHeader";
+@import "./productPageHeader";
+@import "./contentPageHeader.scss";
 
 //Global CSS
 #body > div.body.content > div.container.main,
@@ -33,3 +35,11 @@ $redBorder: "1px solid red";
 .bg {
   visibility: hidden;
 }
+
+@include media(">800px") {
+  html {
+  width: 100vw !important;
+}
+}
+
+

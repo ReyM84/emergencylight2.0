@@ -16,8 +16,9 @@ $redBorder: "1px solid red";
 @import "./header";
 @import "./homeHeader";
 @import "./categoryHeader";
-@import "./productPageHeader";
-@import "./contentPageHeader.scss";
+@import "./productHeader";
+@import "./contentHeader";
+@import "./blogPageHeader";
 
 //Global CSS
 #body > div.body.content > div.container.main,

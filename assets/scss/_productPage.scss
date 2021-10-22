@@ -58,3 +58,30 @@
   > li.tab.overview {
   background: $primaryRed !important;
 }
+
+#tab-description > table {
+  max-width: 90%;
+}
+
+#body {
+  min-width: 90vw !important;
+}
+
+// #topcontrol > svg {
+//   position: absolute;
+//   right: 7rem;
+//   top: -37px;
+// }
+
+// #olark-wrapper > div.olark-launch-button-wrapper > div.olark-button-focus-wrapper > button {
+//   height: 2rem !important;
+//   width: 2rem !important;
+//   position: relative !important;
+//   right: 6rem !important;
+//   top: 1.5rem !important;
+// }
+// #olark-wrapper > div.olark-launch-button-wrapper > div.olark-button-focus-wrapper > button > svg {
+//   width: 1.5rem !important;
+//   position: relative !important;
+//   top: -9px !important;
+// }

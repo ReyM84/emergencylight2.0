@@ -1,4 +1,4 @@
-.catBg {
+.conBg {
   position: absolute;
   top: -12rem;
   padding: 1rem;
@@ -9,46 +9,46 @@
   align-items: center;
 }
 
-.catLogo {
+.conLogo {
   max-width: 350px;
 }
 
-.catNumber { 
+.conNumber { 
   max-width: 300px;
 }
 
 @include media("<345px") {
-  .catLogo {
+  .conLogo {
       max-width: 300px;
   }
 }  
 
 @include media(">399px") {
-  .catBg {
+  .conBg {
       top: -14rem;
   }
 }
 
 @include media(">800px") {
-  .catBg {
+  .conBg {
       flex-direction: row;
       justify-content: space-around;
       max-width: 1150px;
   }
     
-    .catLogo {
+    .conLogo {
       max-width: 400px;
     }
 }
 
 @include media(">1439px") {
-  .catBg {
+  .conBg {
       justify-content: space-between;
     }
-  .catLogo {
+  .conLogo {
       max-width: 450px;
   }
-  .catNumber {
+  .conNumber {
       max-width: 350px;
   }
 }
